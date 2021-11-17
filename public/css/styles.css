@@ -1,0 +1,38 @@
+.logo {background-color: #EAC926 }
+.barraBusqueda {background-color: white}
+.icon{ background-color: white}
+p{font-size: 12px;
+    color:#666;}
+body {font-family: 'Roboto', sans-serif}
+
+.titulares {font-size: 24px}
+.precios {font-size: 18px}
+.descuentos {font-size: 16px}
+.descripciones {font-size: 16px}
+
+.inicio {background-color: #EAC926;
+    color:#666}
+span{background-color: white}
+.iconoheader {color:black}
+
+.comprá {text-align: center}
+
+.menu {
+    color: white;
+    background-color: #03264C;;
+    text-align: center;
+    font-size: 30px;
+    background-size: 50px;
+}
+
+    footer {
+
+        text-align: center;
+    }
+    .puntoblanco {color:white}
+    .seccion { line-height: 15px}
+    h3.seccion {line-height: 1px}
+    .icono {
+        color: #1259c3;
+        font-size: 32px;
+        line-height: 10px }
