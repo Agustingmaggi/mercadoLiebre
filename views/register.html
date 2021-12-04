@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href=/css/normalize.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=/css/register.css>
+    <title>Document</title>
+</head>
+<body>
+    <header class='main-header'>
+
+        <div class= "headerFila1">
+         <img src = "/images/logo-mercado-liebre.svg" class="logo">
+
+         <form action="/crear-producto" method="POST" class="formulario" >
+         <div>
+            <input type="text" name="Barra Búsqueda" placeholder="Buscar productos" class="input">
+        </div>
+        </form>
+        </div>
+
+        <h2 class="frase-header"> <i class="fas fa-hand-holding-usd">
+        </i>Comprá en cuotas y sin tarjeta de crédito</h2>
+    
+    
+        <a href="#" class="hamburguer-button">
+        <i class="fas fa-bars"></i>
+        </a>
+    
+    
+      <nav class="headerFila2">
+        
+            <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+            </ul>
+
+        <ul class ="right-navbar">
+            <li><a href="/register">Creá tu cuenta  <i class="fas fa-credit-card"></i> </a>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i> </a>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+        </ul>
+    </nav>
+</header> 
+
+       <!-- Formulario-->
+
+<form action="/crear-producto" method="POST" class="formulario" >
+    <div class="divs-formulario">
+        <input type="text" name="nombre" placeholder="Nombre y apellido" class="input" required>
+        <input type="text" name="precio" placeholder="Nombre de usuario" class="input">
+        <input type="text" name="precio" placeholder="Fecha de nacimiento" class="input">
+        <input type="text" name="precio" placeholder="Domicilio" class="input">
+        <input type="password" name="password" placeholder="Type your password" class="input">
+        <input type="password" name="password" placeholder="Confirm your password" class="input">
+
+        <fieldset class="perfilUsuario">
+        <legend class="perfil">Perfil del usuario</legend>
+            <label class="opciones">Soy comprador
+            <input type="radio" name="perfil" value="Comprador"> </label>
+            <label class="opciones">Soy vendedor
+            <input type="radio" name="perfil" value="Vendedor"></label>
+            <label class="opciones">Soy Ambos
+            <input type="radio" name="perfil" value="Ambos"></label>
+        </fieldset>
+        
+        <fieldset class="categorias-interes">
+        <legend class="categorias">Categorías de interés</legend>
+        <div class ="electro">
+            <input type="checkbox" name="categoria" id="categoriaElectro" class="categoria" value="Electro">
+        <label for="categoriaElectro">Electro</label>
+        </div>
+        <div class ="moda">
+            <input type="checkbox" name="categoria" id="categoriaModa" class="categoria" value="Moda">
+        <label for="categoriaModa">Moda</label>
+        </div>
+        <div class ="hogar">
+            <input type="checkbox" name="categoria" id="categoriaHogar" class="categoria" value="Hogar">
+        <label for="categoriaHogar">Hogar</label>
+        </div>
+        <div class ="jugueteria">
+            <input type="checkbox" name="categoria" id="categoriaJuguetería" class="categoria" value="Juguetería">
+        <label for="categoriaJuguetería">Juguetería</label>
+        </div>
+        <div class ="vida">
+            <input type="checkbox" name="categoria" id="categoriaVidaSana" class="categoria" value="Vida Sana">
+        <label for="categoriaVidaSana">Vida Sana</label>
+        </div>
+    </fieldset>
+
+        <legend class="foto"> Foto del Usuario </legend>
+        <input type="file" name="foto" id="foto" class="seleccionarArchivo" required>
+        
+        
+
+   
+    <button class="boton" type="submit">Guardar</button>
+    <button class="boton" type="reset">Borrar</button>
+
+</div>
+</form>
+    
+</body>
+</html>

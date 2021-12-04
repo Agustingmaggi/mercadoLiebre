@@ -1,0 +1,332 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {font-family: 'Roboto', sans-serif}
+
+/* <------------------------------HEADER--------------------------------> */
+
+
+.main-header {background-color: #EAC926;
+    padding: 20px;
+    color: rgb(207, 188, 188);
+    
+}
+
+.logo {
+    background-color: #EAC926;
+    width: 200px;
+    margin-right: 5px
+}
+
+.input-barra{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    text-align:left;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid rgba(100, 100, 100, 0.1);
+    background-color:white;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+.formulario{
+position:relative;
+}
+
+.lupa{
+color:rgba(0, 0, 0, 0.60);
+position:absolute;
+left: 195px;
+top:58px;
+font-size: 18px
+}
+
+.headerFila1 {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center
+}
+
+.frase-header {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey
+}
+
+.hamburguer-button{
+    background-color: #03264c;
+    color: white;
+    display: block;
+    max-width: 40px;
+    padding: 15 px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto
+}
+
+.headerFila2 {
+    display: none;
+}
+
+
+/* <------------------------------BANNER--------------------------------> */
+
+
+.banner{
+    width: 100%
+}
+
+
+
+/* <------------------------------BODY--------------------------------> */
+
+
+
+.camion{
+    display: flex;
+    flex-direction: row; 
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color:#39b54a;
+    background-color: #FFF;
+    border-radius:50%;
+    position:absolute;
+    left: 300px;
+    transition: transform 2s
+    }
+
+.camion:hover{
+    transform: rotateZ(-90deg)
+    }
+
+.titulares {
+    font-size: 18px;
+    text-align: center;
+    margin:20px;
+}
+.titulares-ofertas {
+    font-size: 18px;
+    text-align: center;
+    margin:20px;
+    display:none
+}
+
+.precios {
+    font-size: 18px;
+    width:30%;
+    display:block;
+}
+
+.descuentos {
+    font-size:14px;
+    color:#39b54a;
+    width: 70%;
+    display:block
+}
+
+.preciosYdescuentos {
+    display:flex;
+    flex-direction:row;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.descripciones {
+    color: white;
+    margin-top: 10px;
+    margin-bottom:10px;
+    transition: color 2s
+}
+
+.descripciones:hover {
+ color: black
+}
+
+.puntoblanco {color:white}
+
+h3.seccion {line-height: 40px}
+
+.icono {
+    color: #1259c3;
+    font-size: 32px;
+    line-height: 10px; 
+    margin: 30px;
+    transition: color 2s
+    }
+
+
+.articulo01{
+            margin-bottom: 10px;
+            border: 7px solid rgba(100, 100, 100, 0.15);
+            transition: box-shadow 2s
+}
+
+.articulo01:hover{
+     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            
+}
+
+.articulo02, .articulo03, .articulo04, .articulo05, .articulo06, .articulo07, .articulo08 {
+            display: none
+}
+
+.cajaArticulo01{
+    position: relative;
+}
+
+.precioYdescuentos {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+} 
+
+.section1{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+/*
+
+<------------------------------FOOTER -------------------------------->
+
+*/
+
+footer {text-align: center;}
+
+.copyright{
+    margin-top:20px;
+    margin-bottom:10px
+}
+
+@media (min-width: 769px ){
+
+    .descripciones {
+        color: white;
+        transition: color 2s
+    }
+
+    .descripciones:hover {
+     color: black
+    }
+
+    .articulo01, .articulo02 {
+                display: block;
+                margin-bottom:10px;
+                border: 7px solid rgba(100, 100, 100, 0.15);
+                transition: box-shadow 2s;
+    }
+
+    .articulo01:hover, .articulo02:hover {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+
+    .cajaArticulo01, .cajaArticulo02{
+                position: relative;
+                border: 2px solid rgba(100, 100, 100, 0.1);
+                padding: 15px;
+
+    }
+
+    .articulo03, .articulo04, .articulo05, .articulo06, .articulo07, .articulo08 {
+                display: none;
+    }
+
+
+    .headerFila1 {
+                display:flex;
+                flex-direction:row;
+                justify-content: center;
+    }
+
+    .headerFila2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+    }
+
+    .headerFila2 ul {
+                display:flex;
+                list-style:none;
+                margin: 0;
+                padding: 0
+    }
+
+    .headerFila2 li{
+                margin: 5px;
+    }
+
+    .headerFila2 a {
+                text-decoration: none;
+                color: #222222;
+                display: inline-block;
+                padding: 5px 0;
+                font-size: 17px;
+    }
+            .hamburguer-button{
+                display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+            
+    
+    .articulo01, .articulo02, .articulo03, .articulo04 {
+                display: block;
+                margin-bottom:10px;
+                border: 7px solid rgba(100, 100, 100, 0.1);
+                transition: box-shadow 2s;
+    }
+
+     .articulo01:hover, .articulo02:hover, .articulo03:hover, .articulo04:hover {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+
+    .articulo05, .articulo06, .articulo07, .articulo08 {
+                display: none
+    }
+
+    .cajaArticulo01, .cajaArticulo02, .cajaArticulo03, .cajaArticulo04{
+                position: relative;
+                border: 2px solid rgba(100, 100, 100, 0.1);
+                padding: 15px;
+    }
+
+    .descripciones {
+                color: white;
+                margin-top: 10px;
+                transition: color 2s
+    }
+            
+    .descripciones:hover {
+             color: black
+    }
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icono:hover{
+color: yellow
+}
+
+}
+
+
+
+        
