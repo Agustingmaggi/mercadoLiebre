@@ -285,9 +285,7 @@ footer {text-align: center;}
             
     
     .articulo01, .articulo02, .articulo03, .articulo04 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                display: block;
                 margin-bottom:10px;
                 border: 7px solid rgba(100, 100, 100, 0.1);
                 transition: box-shadow 2s;
