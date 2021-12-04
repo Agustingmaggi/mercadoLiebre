@@ -90,10 +90,6 @@ font-size: 18px
 
 /* <------------------------------BODY--------------------------------> */
 
-.main{
-    width:90%;
-    text-align:center
-}
 
 .camion{
     display: flex;
@@ -289,7 +285,9 @@ footer {text-align: center;}
             
     
     .articulo01, .articulo02, .articulo03, .articulo04 {
-                display: block;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
                 margin-bottom:10px;
                 border: 7px solid rgba(100, 100, 100, 0.1);
                 transition: box-shadow 2s;
